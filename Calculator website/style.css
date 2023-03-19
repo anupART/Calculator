@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+
+    /*The CSS code width: 100%; sets the width of an element to take up 100% of the width of its containing element. This means that the element will stretch across the entire available width of its parent element.
+
+The CSS code height: 100vh; sets the height of an element to take up 100% of the viewport height. vh stands for viewport height, which is the height of the browser window. This means that the element will take up the entire height of the browser window, regardless of how much content is inside the element.*/
+    background-color:cornsilk;
+    display: flex;  
+    /*The flex property in CSS is used to specify the ability of a flex item to grow or shrink to fill the available space inside a flex container. It is used in combination with other flex properties such as flex-direction, justify-content, and align-items to create flexible layouts.*/
+    align-items: center;
+    justify-content: center;
+
+    /*align-items: center; aligns the flex container's items along the cross axis (vertically, if the main axis is horizontal and horizontally, if the main axis is vertical) to the center.
+
+The CSS property justify-content: center; aligns the flex container's items along the main axis (horizontally, */
+
+}
+.calci{
+    background-color:black;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: medium;                                                              
+}
+
+.calci form input{
+    border: 0;
+    outline: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1) ,5px 5px 15px rgba(0, 0, 0, 0.2) ;
+    background: transparent;
+    font-size: 20px;
+    color:whitesmoke;
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end; 
+    /* contenet will b in right side */
+    margin: 20px 0;
+    /* topbottom    leftright */
+
+}
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 40px;
+    box-shadow: none;
+}
+ 
+form input.equal{
+    width: 160px;
+
+}
+
+form input.operator{
+    color:bisque;
+}
